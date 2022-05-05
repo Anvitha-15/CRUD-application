@@ -1,0 +1,38 @@
+<!-- include Header -->
+<%- include('include/_header')%>
+<!-- /inlude Header -->
+
+<!-- MAIN SECTION -->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex-justify-between">
+            <div class="filter">
+                <a href="/"><i class="fa fa-angle-double-left" aria-hidden="true"></i>All Users</a>
+            </div>
+        </div>
+
+        <div class="form-title text-center">
+            <h2 class="text-dark">New User</h2>
+            <span class="text-light"> Use the below form to create a new user</span>
+        </div>
+
+        <!-- FORM HANDLING -->
+        <%- include('include/_form')%>
+        <!-- /FORM HANDLING -->
+    </div>
+</main>
+<!-- /MAIN SECTION -->
+
+
+<!-- include Footer -->
+<%- include('include/_footer')%>
+<!-- /inlude Footer -->
+
+
+
+<!-- PATH OF ADD USER FUNCTIONALITY
+
+    index.ejs => router.js => render.js => addUser.ejs => form.ejs => router.js => controller.js => redirect to adduser page
+
+-->
+
